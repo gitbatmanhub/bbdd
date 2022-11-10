@@ -7,5 +7,5 @@ case
 when maquina="Producción" then "Estas son las areas de produccion"
 when maquina="Compactadora" then "Estas son las de la compactadora"
 else area
-end as consulta
+end as Consultas
 from ordenesTrabajo
