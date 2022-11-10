@@ -26,3 +26,19 @@ if(fecha < '2022-11-10', concat(id, '-22'),
     )
     ) as codigo
 from ordenestrabajo;
+
+
+#ifNull NullIf
+
+select ifnull(null, "text") as resultados;
+
+select * from users;
+
+select fullname, ifnull(sobreMi, empresa) as contacto
+from users;
+
+
+select fullname, ifnull((select pais where id=3),
+    'No tiene pais registarado') as pais
+from users
+where id= 3;
