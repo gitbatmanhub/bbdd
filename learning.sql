@@ -42,3 +42,6 @@ select fullname, ifnull((select pais where id=3),
     'No tiene pais registarado') as pais
 from users
 where id= 3;
+
+
+select nullif(2, 2)
